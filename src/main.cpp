@@ -50,12 +50,10 @@ int main(int argc, char** argv)
             };
             testnet.changeinputs(one);
             testnet.outputnetwork(1, true);
-
             cout << "First label was: " << int(data.labels[0]) << endl;
         }
         else
         {
-            // Legacy toy-mode (your original behavior)
             testnet.CreateLayer(4);
             testnet.CreateLayer(3);
             testnet.CreateLayer(1);
